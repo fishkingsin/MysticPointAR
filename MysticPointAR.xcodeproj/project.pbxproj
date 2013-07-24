@@ -32,6 +32,7 @@
 		E30C8287179F7C8B0088E465 /* Qualcomm.dat in Resources */ = {isa = PBXBuildFile; fileRef = E30C827E179F7C8B0088E465 /* Qualcomm.dat */; };
 		E30C8288179F7C8B0088E465 /* Qualcomm.xml in Resources */ = {isa = PBXBuildFile; fileRef = E30C827F179F7C8B0088E465 /* Qualcomm.xml */; };
 		E30C8289179F7C8B0088E465 /* TextureTeapotBrass.png in Resources */ = {isa = PBXBuildFile; fileRef = E30C8280179F7C8B0088E465 /* TextureTeapotBrass.png */; };
+		E352D568179FB99C007544EA /* eye.png in Resources */ = {isa = PBXBuildFile; fileRef = E352D567179FB99C007544EA /* eye.png */; };
 		E41D3ED713B38FB500A75A5D /* Project.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E41D3ED613B38FB500A75A5D /* Project.xcconfig */; };
 		E41D3EE613B3906D00A75A5D /* CoreOF.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E41D3EE513B3906D00A75A5D /* CoreOF.xcconfig */; };
 		E41D400B13B39D2100A75A5D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41D400613B39D2100A75A5D /* AVFoundation.framework */; };
@@ -114,6 +115,7 @@
 		E30C827E179F7C8B0088E465 /* Qualcomm.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = Qualcomm.dat; sourceTree = "<group>"; };
 		E30C827F179F7C8B0088E465 /* Qualcomm.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Qualcomm.xml; sourceTree = "<group>"; };
 		E30C8280179F7C8B0088E465 /* TextureTeapotBrass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextureTeapotBrass.png; sourceTree = "<group>"; };
+		E352D567179FB99C007544EA /* eye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eye.png; sourceTree = "<group>"; };
 		E41D3ED613B38FB500A75A5D /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
 		E41D3EE513B3906D00A75A5D /* CoreOF.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = CoreOF.xcconfig; path = ../../../libs/openFrameworksCompiled/project/ios/CoreOF.xcconfig; sourceTree = SOURCE_ROOT; };
 		E41D400613B39D2100A75A5D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -363,6 +365,7 @@
 		E30C8276179F7C8B0088E465 /* data */ = {
 			isa = PBXGroup;
 			children = (
+				E352D567179FB99C007544EA /* eye.png */,
 				E30C8277179F7C8B0088E465 /* Default.png */,
 				E30C8278179F7C8B0088E465 /* Default@2x.png */,
 				E30C8279179F7C8B0088E465 /* Icon.png */,
@@ -490,6 +493,7 @@
 				E30C8287179F7C8B0088E465 /* Qualcomm.dat in Resources */,
 				E30C8288179F7C8B0088E465 /* Qualcomm.xml in Resources */,
 				E30C8289179F7C8B0088E465 /* TextureTeapotBrass.png in Resources */,
+				E352D568179FB99C007544EA /* eye.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

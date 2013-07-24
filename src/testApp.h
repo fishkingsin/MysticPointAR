@@ -22,9 +22,10 @@ class testApp : public ofxiPhoneApp{
         void gotFocus();
         void gotMemoryWarning();
         void deviceOrientationChanged(int newOrientation);
-    ofPoint touchPoint;
+//    ofPoint touchPoint;
     
     ofImage cameraImage;
+    ofImage eyeImage;
 };
 
 
