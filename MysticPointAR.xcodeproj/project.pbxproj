@@ -1,0 +1,669 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		3f73edde2e305b99e21534a5a7be43c8 /* ofxQCAR_Utils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 906ccdae36db8d3fcdc05fad48456fe4 /* ofxQCAR_Utils.mm */; };
+		4ac3477dfe845cbab197c801d3821a2b /* ofxQCAR.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18df8898970a5f1f067ceb6ca35f825d /* ofxQCAR.mm */; };
+		5088f4c3ee4616f053461461b38d6c27 /* ofxQCAR_ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = b6a5bbcefce0bf5ccd22ae5f8f4c7a04 /* ofxQCAR_ViewController.mm */; };
+		5326AEA810A23A0500278DE6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5326AEA710A23A0500278DE6 /* CoreLocation.framework */; };
+		53F323EB10A20EDB00E0DAE4 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F323EA10A20EDB00E0DAE4 /* OpenAL.framework */; };
+		BB16EBD20F2B2A9500518274 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB16EBD10F2B2A9500518274 /* OpenGLES.framework */; };
+		BB16EBD90F2B2AB500518274 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB16EBD80F2B2AB500518274 /* QuartzCore.framework */; };
+		BB24DDCA10DA781C00E9C588 /* ofxiphone-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB24DDC910DA781C00E9C588 /* ofxiphone-Info.plist */; };
+		BBE5EAB80F49AD8400F28951 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE5EAB70F49AD8400F28951 /* AudioToolbox.framework */; };
+		E30C826F179F7BF10088E465 /* libQCAR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E30C826E179F7BF10088E465 /* libQCAR.a */; };
+		E30C8271179F7C250088E465 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E30C8270179F7C250088E465 /* CoreMotion.framework */; };
+		E30C8273179F7C310088E465 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E30C8272179F7C310088E465 /* Security.framework */; };
+		E30C8275179F7C3D0088E465 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E30C8274179F7C3D0088E465 /* SystemConfiguration.framework */; };
+		E30C8281179F7C8B0088E465 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E30C8277179F7C8B0088E465 /* Default.png */; };
+		E30C8282179F7C8B0088E465 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E30C8278179F7C8B0088E465 /* Default@2x.png */; };
+		E30C8283179F7C8B0088E465 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E30C8279179F7C8B0088E465 /* Icon.png */; };
+		E30C8284179F7C8B0088E465 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E30C827A179F7C8B0088E465 /* Icon@2x.png */; };
+		E30C8285179F7C8B0088E465 /* Disney.dat in Resources */ = {isa = PBXBuildFile; fileRef = E30C827C179F7C8B0088E465 /* Disney.dat */; };
+		E30C8286179F7C8B0088E465 /* Disney.xml in Resources */ = {isa = PBXBuildFile; fileRef = E30C827D179F7C8B0088E465 /* Disney.xml */; };
+		E30C8287179F7C8B0088E465 /* Qualcomm.dat in Resources */ = {isa = PBXBuildFile; fileRef = E30C827E179F7C8B0088E465 /* Qualcomm.dat */; };
+		E30C8288179F7C8B0088E465 /* Qualcomm.xml in Resources */ = {isa = PBXBuildFile; fileRef = E30C827F179F7C8B0088E465 /* Qualcomm.xml */; };
+		E30C8289179F7C8B0088E465 /* TextureTeapotBrass.png in Resources */ = {isa = PBXBuildFile; fileRef = E30C8280179F7C8B0088E465 /* TextureTeapotBrass.png */; };
+		E41D3ED713B38FB500A75A5D /* Project.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E41D3ED613B38FB500A75A5D /* Project.xcconfig */; };
+		E41D3EE613B3906D00A75A5D /* CoreOF.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E41D3EE513B3906D00A75A5D /* CoreOF.xcconfig */; };
+		E41D400B13B39D2100A75A5D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41D400613B39D2100A75A5D /* AVFoundation.framework */; };
+		E41D400C13B39D2100A75A5D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41D400713B39D2100A75A5D /* CoreMedia.framework */; };
+		E41D400D13B39D2100A75A5D /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41D400813B39D2100A75A5D /* CoreVideo.framework */; };
+		E41D400E13B39D2100A75A5D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41D400913B39D2100A75A5D /* MapKit.framework */; };
+		E41D421413B3A95300A75A5D /* libofxiPhone_iphoneos_Debug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E41D410213B3A0D800A75A5D /* libofxiPhone_iphoneos_Debug.a */; };
+		E4A823A412561BE3002F86A2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4A823A312561BE3002F86A2 /* CoreGraphics.framework */; };
+		E4D8936E11527B74007E1F53 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = E4D8936B11527B74007E1F53 /* main.mm */; };
+		E4D8936F11527B74007E1F53 /* testApp.mm in Sources */ = {isa = PBXBuildFile; fileRef = E4D8936D11527B74007E1F53 /* testApp.mm */; };
+		b3b7c0797f5a2ce169c0f9d21fd02e11 /* ofxQCAR_EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = c75c5fe7b7abcdaf7750d87c941c500e /* ofxQCAR_EAGLView.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E41D410113B3A0D800A75A5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E41D40FD13B3A0D800A75A5D /* iOS+OFLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BB24DED610DA7A3F00E9C588;
+			remoteInfo = "iPhone+OF Static Library";
+		};
+		E41D410313B3A11300A75A5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E41D40FD13B3A0D800A75A5D /* iOS+OFLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BB24DE5C10DA7A3F00E9C588;
+			remoteInfo = "iPhone+OF Static Library";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0152b07c630e2d1681148e1eb26ef88b /* Matrices.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Matrices.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/Matrices.h; sourceTree = SOURCE_ROOT; };
+		080142a146c3f80ab83cf9fe67eeb250 /* ImageTarget.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ImageTarget.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/ImageTarget.h; sourceTree = SOURCE_ROOT; };
+		084cbcf21ef48d2a211478a3eeed1203 /* Marker.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Marker.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/Marker.h; sourceTree = SOURCE_ROOT; };
+		0c6aca91511383a710cf9b361ec6043c /* TargetFinder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = TargetFinder.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/TargetFinder.h; sourceTree = SOURCE_ROOT; };
+		15dcf45401333d22260c3ba6ff21525f /* TargetSearchResult.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = TargetSearchResult.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/TargetSearchResult.h; sourceTree = SOURCE_ROOT; };
+		18df8898970a5f1f067ceb6ca35f825d /* ofxQCAR.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; name = ofxQCAR.mm; path = ../../../addons/ofxQCAR/src/ofxQCAR.mm; sourceTree = SOURCE_ROOT; };
+		18e880fc20a80713f11cc4f19d847391 /* QCAR.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = QCAR.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/QCAR.h; sourceTree = SOURCE_ROOT; };
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D6058910D05DD3D006BFB54 /* MysticPointAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MysticPointAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1a003e49cf5fbbbea3c049e8130d6df6 /* NonCopyable.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = NonCopyable.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/NonCopyable.h; sourceTree = SOURCE_ROOT; };
+		1e1d6fcaeb706296f947218536b80cd3 /* DataSet.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = DataSet.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/DataSet.h; sourceTree = SOURCE_ROOT; };
+		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		32CA4F630368D1EE00C91783 /* iPhone_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhone_Prefix.pch; sourceTree = "<group>"; };
+		377bbdcfca5391a6713f1c643d531349 /* VirtualButtonResult.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = VirtualButtonResult.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/VirtualButtonResult.h; sourceTree = SOURCE_ROOT; };
+		418ada74a65528919dcd18055131d855 /* TrackableSource.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = TrackableSource.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/TrackableSource.h; sourceTree = SOURCE_ROOT; };
+		425c40a3b818b1e483e851e255f48d1e /* MarkerTracker.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = MarkerTracker.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/MarkerTracker.h; sourceTree = SOURCE_ROOT; };
+		4ab16c3537211872a02674f94ce0662b /* VideoMode.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = VideoMode.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/VideoMode.h; sourceTree = SOURCE_ROOT; };
+		4f98224dd9e2317ebe841dd93b23e0f5 /* ImageTargetBuilder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ImageTargetBuilder.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/ImageTargetBuilder.h; sourceTree = SOURCE_ROOT; };
+		50f883ce2ec874f4ce9a61df543ed498 /* ofxQCAR_EAGLView.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxQCAR_EAGLView.h; path = ../../../addons/ofxQCAR/src/ofxQCAR_EAGLView.h; sourceTree = SOURCE_ROOT; };
+		5326AEA710A23A0500278DE6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		53F323EA10A20EDB00E0DAE4 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		58ab1c5e0b15998d7ffeed57b526c51d /* Frame.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Frame.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/Frame.h; sourceTree = SOURCE_ROOT; };
+		5cf46f0eb7c6f24412b6e9cb1fd2ece1 /* VideoBackgroundConfig.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = VideoBackgroundConfig.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/VideoBackgroundConfig.h; sourceTree = SOURCE_ROOT; };
+		5dabebe8ca93f5af955d880e53b8f539 /* ofxQCAR.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxQCAR.h; path = ../../../addons/ofxQCAR/src/ofxQCAR.h; sourceTree = SOURCE_ROOT; };
+		6296c7900014a702e62c8015fc8c9d79 /* QCAR_iOS.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = QCAR_iOS.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/QCAR_iOS.h; sourceTree = SOURCE_ROOT; };
+		80491823bac78a61a4f2520615ca3f6b /* UIGLViewProtocol.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = UIGLViewProtocol.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/UIGLViewProtocol.h; sourceTree = SOURCE_ROOT; };
+		8c2670c8672d15e1e562042d8716f6a8 /* Rectangle.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Rectangle.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/Rectangle.h; sourceTree = SOURCE_ROOT; };
+		8ea3627cb8662d8e7a808944830d0dc7 /* Tool.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Tool.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/Tool.h; sourceTree = SOURCE_ROOT; };
+		8f38577e26ef4b8a00d26e56c40791e0 /* Vectors.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Vectors.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/Vectors.h; sourceTree = SOURCE_ROOT; };
+		906ccdae36db8d3fcdc05fad48456fe4 /* ofxQCAR_Utils.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; name = ofxQCAR_Utils.mm; path = ../../../addons/ofxQCAR/src/ofxQCAR_Utils.mm; sourceTree = SOURCE_ROOT; };
+		93bd643240bb561595797c7c2fae0551 /* ofxQCAR_ViewController.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxQCAR_ViewController.h; path = ../../../addons/ofxQCAR/src/ofxQCAR_ViewController.h; sourceTree = SOURCE_ROOT; };
+		96a2c4cd77b2d05d8ca1260148baf917 /* ImageTracker.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ImageTracker.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/ImageTracker.h; sourceTree = SOURCE_ROOT; };
+		99f2b59983ea83a25d4f12875484f417 /* ofxQCAR_Utils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxQCAR_Utils.h; path = ../../../addons/ofxQCAR/src/ofxQCAR_Utils.h; sourceTree = SOURCE_ROOT; };
+		BB16EBD10F2B2A9500518274 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		BB16EBD80F2B2AB500518274 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BB24DDC910DA781C00E9C588 /* ofxiphone-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ofxiphone-Info.plist"; sourceTree = "<group>"; };
+		BBE5EAB70F49AD8400F28951 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E30C826E179F7BF10088E465 /* libQCAR.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libQCAR.a; sourceTree = "<group>"; };
+		E30C8270179F7C250088E465 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		E30C8272179F7C310088E465 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		E30C8274179F7C3D0088E465 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E30C8277179F7C8B0088E465 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E30C8278179F7C8B0088E465 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		E30C8279179F7C8B0088E465 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		E30C827A179F7C8B0088E465 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		E30C827C179F7C8B0088E465 /* Disney.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = Disney.dat; sourceTree = "<group>"; };
+		E30C827D179F7C8B0088E465 /* Disney.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Disney.xml; sourceTree = "<group>"; };
+		E30C827E179F7C8B0088E465 /* Qualcomm.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = Qualcomm.dat; sourceTree = "<group>"; };
+		E30C827F179F7C8B0088E465 /* Qualcomm.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Qualcomm.xml; sourceTree = "<group>"; };
+		E30C8280179F7C8B0088E465 /* TextureTeapotBrass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextureTeapotBrass.png; sourceTree = "<group>"; };
+		E41D3ED613B38FB500A75A5D /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		E41D3EE513B3906D00A75A5D /* CoreOF.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = CoreOF.xcconfig; path = ../../../libs/openFrameworksCompiled/project/ios/CoreOF.xcconfig; sourceTree = SOURCE_ROOT; };
+		E41D400613B39D2100A75A5D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E41D400713B39D2100A75A5D /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		E41D400813B39D2100A75A5D /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		E41D400913B39D2100A75A5D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E41D40FD13B3A0D800A75A5D /* iOS+OFLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "iOS+OFLib.xcodeproj"; path = "../../../libs/openFrameworksCompiled/project/ios/iOS+OFLib.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		E4A823A312561BE3002F86A2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E4D8936B11527B74007E1F53 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = main.mm; path = src/main.mm; sourceTree = SOURCE_ROOT; };
+		E4D8936C11527B74007E1F53 /* testApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = testApp.h; path = src/testApp.h; sourceTree = SOURCE_ROOT; };
+		E4D8936D11527B74007E1F53 /* testApp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = testApp.mm; path = src/testApp.mm; sourceTree = SOURCE_ROOT; };
+		a3fe983a8a21bd5e709a38d5d9f04b09 /* MultiTarget.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = MultiTarget.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/MultiTarget.h; sourceTree = SOURCE_ROOT; };
+		a7d8e2f8b918d9a6c8aedd8ed7fec915 /* CameraDevice.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = CameraDevice.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/CameraDevice.h; sourceTree = SOURCE_ROOT; };
+		a7d9b5d27cf8029f6abb73b98d30c545 /* MarkerResult.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = MarkerResult.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/MarkerResult.h; sourceTree = SOURCE_ROOT; };
+		ab2c7cadbc4c1f7fc9507315386f8632 /* CameraCalibration.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = CameraCalibration.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/CameraCalibration.h; sourceTree = SOURCE_ROOT; };
+		b0c5de95f84c6e794a25378af12646ba /* UpdateCallback.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = UpdateCallback.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/UpdateCallback.h; sourceTree = SOURCE_ROOT; };
+		b31db1598af0c8123457cdac368e8e09 /* VideoBackgroundTextureInfo.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = VideoBackgroundTextureInfo.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/VideoBackgroundTextureInfo.h; sourceTree = SOURCE_ROOT; };
+		b6a5bbcefce0bf5ccd22ae5f8f4c7a04 /* ofxQCAR_ViewController.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; name = ofxQCAR_ViewController.mm; path = ../../../addons/ofxQCAR/src/ofxQCAR_ViewController.mm; sourceTree = SOURCE_ROOT; };
+		baa90cbd175ca29984bed6a7a84b6824 /* Tracker.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Tracker.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/Tracker.h; sourceTree = SOURCE_ROOT; };
+		c75c5fe7b7abcdaf7750d87c941c500e /* ofxQCAR_EAGLView.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; name = ofxQCAR_EAGLView.mm; path = ../../../addons/ofxQCAR/src/ofxQCAR_EAGLView.mm; sourceTree = SOURCE_ROOT; };
+		ce315eb63d50f899cfa23d7cee09741c /* Image.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Image.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/Image.h; sourceTree = SOURCE_ROOT; };
+		d3e02db56a807ff65a935787483504bf /* System.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = System.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/System.h; sourceTree = SOURCE_ROOT; };
+		d6d407ad8f9b20e91661872d1ff1f0bb /* State.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = State.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/State.h; sourceTree = SOURCE_ROOT; };
+		d6eb6e2ffc2e64dd2dbb0e38f3d9c4d6 /* Trackable.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Trackable.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/Trackable.h; sourceTree = SOURCE_ROOT; };
+		dcc25d8a52c3dbdd8bd3f905b818082a /* TrackerManager.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = TrackerManager.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/TrackerManager.h; sourceTree = SOURCE_ROOT; };
+		dd1662fc905199a694a43ced8e78362b /* TrackableResult.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = TrackableResult.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/TrackableResult.h; sourceTree = SOURCE_ROOT; };
+		e0a12bc1f33755deac1b527b19acd9ce /* MultiTargetResult.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = MultiTargetResult.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/MultiTargetResult.h; sourceTree = SOURCE_ROOT; };
+		faae19287387ead28348c98af67e1af4 /* ImageTargetResult.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ImageTargetResult.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/ImageTargetResult.h; sourceTree = SOURCE_ROOT; };
+		fb665cbf237566d5b5baee8188c01a0f /* VirtualButton.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = VirtualButton.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/VirtualButton.h; sourceTree = SOURCE_ROOT; };
+		fd21617e4f770a73aa2f2cc89ed8dcc4 /* Renderer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Renderer.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/Renderer.h; sourceTree = SOURCE_ROOT; };
+		ffa28ae906f23f10b21f8e88bc7161ef /* Area.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Area.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/Area.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E41D421413B3A95300A75A5D /* libofxiPhone_iphoneos_Debug.a in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				BB16EBD20F2B2A9500518274 /* OpenGLES.framework in Frameworks */,
+				BB16EBD90F2B2AB500518274 /* QuartzCore.framework in Frameworks */,
+				BBE5EAB80F49AD8400F28951 /* AudioToolbox.framework in Frameworks */,
+				53F323EB10A20EDB00E0DAE4 /* OpenAL.framework in Frameworks */,
+				5326AEA810A23A0500278DE6 /* CoreLocation.framework in Frameworks */,
+				E4A823A412561BE3002F86A2 /* CoreGraphics.framework in Frameworks */,
+				E41D400B13B39D2100A75A5D /* AVFoundation.framework in Frameworks */,
+				E41D400C13B39D2100A75A5D /* CoreMedia.framework in Frameworks */,
+				E41D400D13B39D2100A75A5D /* CoreVideo.framework in Frameworks */,
+				E41D400E13B39D2100A75A5D /* MapKit.framework in Frameworks */,
+				E30C826F179F7BF10088E465 /* libQCAR.a in Frameworks */,
+				E30C8271179F7C250088E465 /* CoreMotion.framework in Frameworks */,
+				E30C8273179F7C310088E465 /* Security.framework in Frameworks */,
+				E30C8275179F7C3D0088E465 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* MysticPointAR.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		252dba18fc81f0f07aec417eb962b4ad /* qcar */ = {
+			isa = PBXGroup;
+			children = (
+				E30C826C179F7BF10088E465 /* lib */,
+				bfde420f29e5e0436e2e7ceb02c0771d /* include */,
+			);
+			name = qcar;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				E30C8276179F7C8B0088E465 /* data */,
+				E4D8936A11527B74007E1F53 /* src */,
+				BB24E1F710DAA51900E9C588 /* openFrameworks */,
+				BB16F26B0F2B646B00518274 /* addons */,
+				BB16E9930F2B1E5900518274 /* libs */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* core frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E30C8274179F7C3D0088E465 /* SystemConfiguration.framework */,
+				E30C8272179F7C310088E465 /* Security.framework */,
+				E30C8270179F7C250088E465 /* CoreMotion.framework */,
+				E41D400613B39D2100A75A5D /* AVFoundation.framework */,
+				E41D400713B39D2100A75A5D /* CoreMedia.framework */,
+				E41D400813B39D2100A75A5D /* CoreVideo.framework */,
+				E41D400913B39D2100A75A5D /* MapKit.framework */,
+				53F323EA10A20EDB00E0DAE4 /* OpenAL.framework */,
+				E4A823A312561BE3002F86A2 /* CoreGraphics.framework */,
+				BBE5EAB70F49AD8400F28951 /* AudioToolbox.framework */,
+				BB16EBD80F2B2AB500518274 /* QuartzCore.framework */,
+				BB16EBD10F2B2A9500518274 /* OpenGLES.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+				5326AEA710A23A0500278DE6 /* CoreLocation.framework */,
+			);
+			name = "core frameworks";
+			sourceTree = "<group>";
+		};
+		4e5b660b5470eabe0fcf837e1af27ff0 /* QCAR */ = {
+			isa = PBXGroup;
+			children = (
+				ffa28ae906f23f10b21f8e88bc7161ef /* Area.h */,
+				ab2c7cadbc4c1f7fc9507315386f8632 /* CameraCalibration.h */,
+				a7d8e2f8b918d9a6c8aedd8ed7fec915 /* CameraDevice.h */,
+				1e1d6fcaeb706296f947218536b80cd3 /* DataSet.h */,
+				58ab1c5e0b15998d7ffeed57b526c51d /* Frame.h */,
+				ce315eb63d50f899cfa23d7cee09741c /* Image.h */,
+				080142a146c3f80ab83cf9fe67eeb250 /* ImageTarget.h */,
+				4f98224dd9e2317ebe841dd93b23e0f5 /* ImageTargetBuilder.h */,
+				faae19287387ead28348c98af67e1af4 /* ImageTargetResult.h */,
+				96a2c4cd77b2d05d8ca1260148baf917 /* ImageTracker.h */,
+				084cbcf21ef48d2a211478a3eeed1203 /* Marker.h */,
+				a7d9b5d27cf8029f6abb73b98d30c545 /* MarkerResult.h */,
+				425c40a3b818b1e483e851e255f48d1e /* MarkerTracker.h */,
+				0152b07c630e2d1681148e1eb26ef88b /* Matrices.h */,
+				a3fe983a8a21bd5e709a38d5d9f04b09 /* MultiTarget.h */,
+				e0a12bc1f33755deac1b527b19acd9ce /* MultiTargetResult.h */,
+				1a003e49cf5fbbbea3c049e8130d6df6 /* NonCopyable.h */,
+				18e880fc20a80713f11cc4f19d847391 /* QCAR.h */,
+				6296c7900014a702e62c8015fc8c9d79 /* QCAR_iOS.h */,
+				8c2670c8672d15e1e562042d8716f6a8 /* Rectangle.h */,
+				fd21617e4f770a73aa2f2cc89ed8dcc4 /* Renderer.h */,
+				d6d407ad8f9b20e91661872d1ff1f0bb /* State.h */,
+				d3e02db56a807ff65a935787483504bf /* System.h */,
+				0c6aca91511383a710cf9b361ec6043c /* TargetFinder.h */,
+				15dcf45401333d22260c3ba6ff21525f /* TargetSearchResult.h */,
+				8ea3627cb8662d8e7a808944830d0dc7 /* Tool.h */,
+				d6eb6e2ffc2e64dd2dbb0e38f3d9c4d6 /* Trackable.h */,
+				dd1662fc905199a694a43ced8e78362b /* TrackableResult.h */,
+				418ada74a65528919dcd18055131d855 /* TrackableSource.h */,
+				baa90cbd175ca29984bed6a7a84b6824 /* Tracker.h */,
+				dcc25d8a52c3dbdd8bd3f905b818082a /* TrackerManager.h */,
+				80491823bac78a61a4f2520615ca3f6b /* UIGLViewProtocol.h */,
+				b0c5de95f84c6e794a25378af12646ba /* UpdateCallback.h */,
+				8f38577e26ef4b8a00d26e56c40791e0 /* Vectors.h */,
+				5cf46f0eb7c6f24412b6e9cb1fd2ece1 /* VideoBackgroundConfig.h */,
+				b31db1598af0c8123457cdac368e8e09 /* VideoBackgroundTextureInfo.h */,
+				4ab16c3537211872a02674f94ce0662b /* VideoMode.h */,
+				fb665cbf237566d5b5baee8188c01a0f /* VirtualButton.h */,
+				377bbdcfca5391a6713f1c643d531349 /* VirtualButtonResult.h */,
+			);
+			name = QCAR;
+			sourceTree = "<group>";
+		};
+		603ac7f308cedc9bbb4d24e00f7d7781 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				252dba18fc81f0f07aec417eb962b4ad /* qcar */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		8cb48cca3c7137dd39977243d0f0ca68 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				5dabebe8ca93f5af955d880e53b8f539 /* ofxQCAR.h */,
+				18df8898970a5f1f067ceb6ca35f825d /* ofxQCAR.mm */,
+				50f883ce2ec874f4ce9a61df543ed498 /* ofxQCAR_EAGLView.h */,
+				c75c5fe7b7abcdaf7750d87c941c500e /* ofxQCAR_EAGLView.mm */,
+				99f2b59983ea83a25d4f12875484f417 /* ofxQCAR_Utils.h */,
+				906ccdae36db8d3fcdc05fad48456fe4 /* ofxQCAR_Utils.mm */,
+				93bd643240bb561595797c7c2fae0551 /* ofxQCAR_ViewController.h */,
+				b6a5bbcefce0bf5ccd22ae5f8f4c7a04 /* ofxQCAR_ViewController.mm */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		8dc3d05fced1535ada3fed1a6c3366e1 /* ofxQCAR */ = {
+			isa = PBXGroup;
+			children = (
+				8cb48cca3c7137dd39977243d0f0ca68 /* src */,
+				603ac7f308cedc9bbb4d24e00f7d7781 /* libs */,
+			);
+			name = ofxQCAR;
+			sourceTree = "<group>";
+		};
+		BB16E9930F2B1E5900518274 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				BBE5E94E0F497BD800F28951 /* core */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		BB16F26B0F2B646B00518274 /* addons */ = {
+			isa = PBXGroup;
+			children = (
+				8dc3d05fced1535ada3fed1a6c3366e1 /* ofxQCAR */,
+			);
+			name = addons;
+			sourceTree = "<group>";
+		};
+		BB24E1F710DAA51900E9C588 /* openFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E41D40FD13B3A0D800A75A5D /* iOS+OFLib.xcodeproj */,
+				32CA4F630368D1EE00C91783 /* iPhone_Prefix.pch */,
+				BB24DDC910DA781C00E9C588 /* ofxiphone-Info.plist */,
+				E41D3EE513B3906D00A75A5D /* CoreOF.xcconfig */,
+				E41D3ED613B38FB500A75A5D /* Project.xcconfig */,
+			);
+			name = openFrameworks;
+			sourceTree = "<group>";
+		};
+		BBE5E94E0F497BD800F28951 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				29B97323FDCFA39411CA2CEA /* core frameworks */,
+			);
+			name = core;
+			sourceTree = "<group>";
+		};
+		E30C826C179F7BF10088E465 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				E30C826D179F7BF10088E465 /* arm */,
+			);
+			name = lib;
+			path = ../../../addons/ofxQCAR/libs/qcar/lib;
+			sourceTree = "<group>";
+		};
+		E30C826D179F7BF10088E465 /* arm */ = {
+			isa = PBXGroup;
+			children = (
+				E30C826E179F7BF10088E465 /* libQCAR.a */,
+			);
+			path = arm;
+			sourceTree = "<group>";
+		};
+		E30C8276179F7C8B0088E465 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				E30C8277179F7C8B0088E465 /* Default.png */,
+				E30C8278179F7C8B0088E465 /* Default@2x.png */,
+				E30C8279179F7C8B0088E465 /* Icon.png */,
+				E30C827A179F7C8B0088E465 /* Icon@2x.png */,
+				E30C827B179F7C8B0088E465 /* qcar_assets */,
+			);
+			name = data;
+			path = bin/data;
+			sourceTree = "<group>";
+		};
+		E30C827B179F7C8B0088E465 /* qcar_assets */ = {
+			isa = PBXGroup;
+			children = (
+				E30C827C179F7C8B0088E465 /* Disney.dat */,
+				E30C827D179F7C8B0088E465 /* Disney.xml */,
+				E30C827E179F7C8B0088E465 /* Qualcomm.dat */,
+				E30C827F179F7C8B0088E465 /* Qualcomm.xml */,
+				E30C8280179F7C8B0088E465 /* TextureTeapotBrass.png */,
+			);
+			path = qcar_assets;
+			sourceTree = "<group>";
+		};
+		E41D40FE13B3A0D800A75A5D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E41D410213B3A0D800A75A5D /* libofxiPhone_iphoneos_Debug.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4D8936A11527B74007E1F53 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E4D8936B11527B74007E1F53 /* main.mm */,
+				E4D8936D11527B74007E1F53 /* testApp.mm */,
+				E4D8936C11527B74007E1F53 /* testApp.h */,
+			);
+			path = src;
+			sourceTree = SOURCE_ROOT;
+		};
+		bfde420f29e5e0436e2e7ceb02c0771d /* include */ = {
+			isa = PBXGroup;
+			children = (
+				4e5b660b5470eabe0fcf837e1af27ff0 /* QCAR */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* MysticPointAR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "MysticPointAR" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				9255DD331112741900D6945E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E41D410413B3A11300A75A5D /* PBXTargetDependency */,
+			);
+			name = MysticPointAR;
+			productName = iPhone;
+			productReference = 1D6058910D05DD3D006BFB54 /* MysticPointAR.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MysticPointAR" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E41D40FE13B3A0D800A75A5D /* Products */;
+					ProjectRef = E41D40FD13B3A0D800A75A5D /* iOS+OFLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* MysticPointAR */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E41D410213B3A0D800A75A5D /* libofxiPhone_iphoneos_Debug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libofxiPhone_iphoneos_Debug.a;
+			remoteRef = E41D410113B3A0D800A75A5D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB24DDCA10DA781C00E9C588 /* ofxiphone-Info.plist in Resources */,
+				E41D3ED713B38FB500A75A5D /* Project.xcconfig in Resources */,
+				E41D3EE613B3906D00A75A5D /* CoreOF.xcconfig in Resources */,
+				E30C8281179F7C8B0088E465 /* Default.png in Resources */,
+				E30C8282179F7C8B0088E465 /* Default@2x.png in Resources */,
+				E30C8283179F7C8B0088E465 /* Icon.png in Resources */,
+				E30C8284179F7C8B0088E465 /* Icon@2x.png in Resources */,
+				E30C8285179F7C8B0088E465 /* Disney.dat in Resources */,
+				E30C8286179F7C8B0088E465 /* Disney.xml in Resources */,
+				E30C8287179F7C8B0088E465 /* Qualcomm.dat in Resources */,
+				E30C8288179F7C8B0088E465 /* Qualcomm.xml in Resources */,
+				E30C8289179F7C8B0088E465 /* TextureTeapotBrass.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9255DD331112741900D6945E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -rf bin/data/ \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D8936E11527B74007E1F53 /* main.mm in Sources */,
+				E4D8936F11527B74007E1F53 /* testApp.mm in Sources */,
+				4ac3477dfe845cbab197c801d3821a2b /* ofxQCAR.mm in Sources */,
+				b3b7c0797f5a2ce169c0f9d21fd02e11 /* ofxQCAR_EAGLView.mm in Sources */,
+				3f73edde2e305b99e21534a5a7be43c8 /* ofxQCAR_Utils.mm in Sources */,
+				5088f4c3ee4616f053461461b38d6c27 /* ofxQCAR_ViewController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E41D410413B3A11300A75A5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "iPhone+OF Static Library";
+			targetProxy = E41D410313B3A11300A75A5D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iPhone_Prefix.pch;
+				INFOPLIST_FILE = "ofxiphone-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../addons/ofxQCAR/libs/qcar/lib/arm\"",
+				);
+				PRODUCT_NAME = "${TARGET_NAME}";
+				VALID_ARCHS = "armv6 armv7";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iPhone_Prefix.pch;
+				INFOPLIST_FILE = "ofxiphone-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../addons/ofxQCAR/libs/qcar/lib/arm\"",
+				);
+				PRODUCT_NAME = "${TARGET_NAME}";
+				VALID_ARCHS = "armv6 armv7";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E41D3ED613B38FB500A75A5D /* Project.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_PROTOTYPE_CONVERSION = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					../../../addons/ofxQCAR/libs,
+					../../../addons/ofxQCAR/libs/qcar,
+					../../../addons/ofxQCAR/libs/qcar/include,
+					../../../addons/ofxQCAR/libs/qcar/include/QCAR,
+					../../../addons/ofxQCAR/libs/qcar/lib,
+					../../../addons/ofxQCAR/libs/qcar/lib/arm,
+					../../../addons/ofxQCAR/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
+				ONLY_ACTIVE_ARCH = NO;
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				WARNING_LDFLAGS = "-no_arch_warnings";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E41D3ED613B38FB500A75A5D /* Project.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					../../../addons/ofxQCAR/libs,
+					../../../addons/ofxQCAR/libs/qcar,
+					../../../addons/ofxQCAR/libs/qcar/include,
+					../../../addons/ofxQCAR/libs/qcar/include/QCAR,
+					../../../addons/ofxQCAR/libs/qcar/lib,
+					../../../addons/ofxQCAR/libs/qcar/lib/arm,
+					../../../addons/ofxQCAR/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
+				ONLY_ACTIVE_ARCH = NO;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				WARNING_LDFLAGS = "-no_arch_warnings";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "MysticPointAR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MysticPointAR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
