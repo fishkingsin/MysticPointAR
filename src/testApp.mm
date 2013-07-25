@@ -1,5 +1,6 @@
 #include "testApp.h"
 int rotation = 0;
+int interval = 0;
 bool bPressed;
 //--------------------------------------------------------------
 void testApp::setup(){
@@ -8,7 +9,7 @@ void testApp::setup(){
 	
 	//If you want a landscape oreintation
 	//iPhoneSetOrientation(OFXIPHONE_ORIENTATION_LANDSCAPE_RIGHT);
-
+    
 	ofBackground(127,127,127);
     
     ofxQCAR * qcar = ofxQCAR::getInstance();
@@ -18,12 +19,29 @@ void testApp::setup(){
     qcar->setup();
     
     eyeImage.loadImage("eye.png");
+    strips.setup();
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
-    ofxQCAR::getInstance()->update();
+    ofxQCAR * qcar = ofxQCAR::getInstance();
     
+    qcar->update();
+    if(qcar->hasFoundMarker()) {
+        
+        strips.update();
+        int diff = ofGetElapsedTimeMillis()-interval;
+        if(diff>500)
+        {
+            int i = ofRandom(0,5);
+            while(i>0)
+            {
+                strips.fireStrip(0, 0, ofRandom(-10,10), ofRandom(-10,10));
+                i--;
+            }
+            interval = ofGetElapsedTimeMillis();
+        }
+    }
 }
 
 //--------------------------------------------------------------
@@ -31,8 +49,8 @@ void testApp::draw(){
 	ofxQCAR * qcar = ofxQCAR::getInstance();
     qcar->draw();
     
-//    bool bPressed;
-//    bPressed = touchPoint.x >= 0 && touchPoint.y >= 0;
+    //    bool bPressed;
+    //    bPressed = touchPoint.x >= 0 && touchPoint.y >= 0;
     
     if(qcar->hasFoundMarker()) {
         
@@ -47,7 +65,7 @@ void testApp::draw(){
             markerPoly.push_back(qcar->getMarkerCorner((ofxQCAR_MarkerCorner)1));
             markerPoly.push_back(qcar->getMarkerCorner((ofxQCAR_MarkerCorner)2));
             markerPoly.push_back(qcar->getMarkerCorner((ofxQCAR_MarkerCorner)3));
-//            bInside = ofInsidePoly(touchPoint, markerPoly);
+            //            bInside = ofInsidePoly(touchPoint, markerPoly);
             
             
             ofSetColor(ofColor(255, 0, 255, bInside ? 150 : 50));
@@ -100,7 +118,7 @@ void testApp::draw(){
             eyeImage.draw(-eyeImage.getWidth()*0.5, eyeImage.getHeight()*0.5 ,eyeImage.getWidth(), -eyeImage.getHeight());
             glPopMatrix();
             
-            
+            strips.draw();
             glDisableClientState( GL_TEXTURE_COORD_ARRAY );
             glDisableClientState( GL_VERTEX_ARRAY );
             glDisableClientState( GL_NORMAL_ARRAY );
