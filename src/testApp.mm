@@ -93,8 +93,8 @@ void testApp::draw(){
             
             
             
-            glTranslatef(6, -21, 0);
-            glScalef(2.421f, 2.421f, 1);
+            glTranslatef(6, -19, 0);
+            //glScalef(2.421f, 2.421f, 1);
             rotation += 1;
             glRotatef(rotation, 0, 0, 1);
             eyeImage.draw(-eyeImage.getWidth()*0.5, eyeImage.getHeight()*0.5 ,eyeImage.getWidth(), -eyeImage.getHeight());

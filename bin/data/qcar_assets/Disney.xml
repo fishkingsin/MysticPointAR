@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
-    <ImageTarget name="Wall" size="1024.000000 905.380615" />
+    <ImageTarget name="Wall" size="423.000000 374.000000" />
   </Tracking>
 </QCARConfig>
